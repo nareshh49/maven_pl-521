@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh 'ls -lsrt'
+                sh 'ls -lart'
                 sh 'java -cp target/maven-test3-1.0-SNAPSHOT.jar com.naresh.App'
             }
         }
