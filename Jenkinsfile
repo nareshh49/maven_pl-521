@@ -9,7 +9,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-        stage('Run') {
+        stage('Test') {
             steps {
                 sh 'ls -lart'
                 sh 'java -cp target/maven-test3-1.0-SNAPSHOT.jar com.naresh.App'
