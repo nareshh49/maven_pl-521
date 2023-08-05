@@ -7,6 +7,7 @@ pipeline {
                 git url: 'https://github.com/nareshh49/maven_pl-421.git'
                 sh 'ls -lart'
                 sh 'mvn package'
+                sh 'mvn test'
             }
         }
         stage('Test') {
